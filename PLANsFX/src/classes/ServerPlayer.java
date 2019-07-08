@@ -217,9 +217,10 @@ public class ServerPlayer extends Pane {
                 if (time- lastFrameTime > 16500000L) {
 
                     lastFrameTime =time;
-                    update();
                     if (frames % 2 == 0 && socket.isConnected()) {
                         timerFunc = timerFunc2;
+                        waitEffect.stop();
+                        airDropSpawner.start();
                         if (frames % 4 == 0) {
                             dataManager.sendData();
                         } else {
