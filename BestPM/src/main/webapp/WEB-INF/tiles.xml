@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- Home Page -->
+	<definition name="index" extends="base-definition">
+		<put-attribute name="header" value="" />
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/index.jsp" />
+	</definition>
+
+	<!-- Adding programmer -->
+	<definition name="programmer" extends="base-definition">
+		<put-attribute name="title" value="Add programmer" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/programmer.jsp" />
+	</definition>
+
+	<!-- Programmers Market -->
+	<definition name="programmersMarket"
+		extends="base-definition">
+		<put-attribute name="title" value="Market" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/programmersMarket.jsp" />
+	</definition>
+
+	<!-- project -->
+	<definition name="project" extends="base-definition">
+		<put-attribute name="title" value="Add project" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/project.jsp" />
+	</definition>
+
+	<!-- projectHome -->
+	<definition name="projectsHome" extends="base-definition">
+		<put-attribute name="title" value="Add project" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/projectsHome.jsp" />
+	</definition>
+
+	<!-- User login -->
+	<definition name="userLogin" extends="base-definition">
+		<!-- Deleting header from jsp -->
+		<put-attribute name="header" value="" />
+		<put-attribute name="title" value="userLogin" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/userLogin.jsp" />
+		<put-attribute name="footer" value="" />
+	</definition>
+
+	<!-- User add -->
+	<definition name="userAdd" extends="base-definition">
+		<!-- Deleting header from jsp -->
+		<put-attribute name="header" value="" />
+		<put-attribute name="title" value="userAdd" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/userAdd.jsp" />
+	</definition>
+
+	<!-- User profile -->
+	<definition name="userProfile" extends="base-definition">
+		<put-attribute name="title" value="userProfile" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/userProfile.jsp" />
+	</definition>
+
+	<!-- Forgot password -->
+	<definition name="forgotPassword" extends="base-definition">
+		<!-- Deleting header from jsp -->
+		<put-attribute name="header" value="" />
+		<put-attribute name="title" value="forgotPassword" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/forgotPassword.jsp" />
+	</definition>
+
+	<!-- Update password -->
+	<definition name="updatePassword" extends="base-definition">
+		<!-- Deleting header from jsp -->
+		<put-attribute name="header" value="" />
+		<put-attribute name="title" value="updatePassword" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/updatePassword.jsp" />
+	</definition>
+
+	<!-- Update user profile -->
+	<definition name="updateProfile" extends="base-definition">
+		<!-- Deleting header from jsp -->
+		<put-attribute name="header" value="" />
+		<put-attribute name="title" value="updateProfile" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/userUpdateProfile.jsp" />
+	</definition>
+
+	<!-- UserProjects -->
+	<definition name="userProjects" extends="base-definition">
+		<put-attribute name="title" value="userProjects" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/userProjects.jsp" />
+	</definition>
+
+	<!-- UserProgrammer -->
+	<definition name="userProgrammers" extends="base-definition">
+		<put-attribute name="title" value="YourProgrammers" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/userProgrammers.jsp" />
+	</definition>
+
+	<!-- hire -->
+	<definition name="programmersHire" extends="base-definition">
+		<put-attribute name="title" value="Hired" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/programmersHire.jsp" />
+	</definition>
+
+	<!-- success -->
+	<definition name="success" extends="base-definition">
+		<put-attribute name="title" value="Hired" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/success.jsp" />
+	</definition>
+
+	<!-- Credit -->
+	<definition name="credit" extends="base-definition">
+		<put-attribute name="title" value="Credit" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/credit.jsp" />
+	</definition>
+
+	<!-- Office -->
+	<definition name="office" extends="base-definition">
+		<put-attribute name="title" value="My Office" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/office.jsp" />
+	</definition>
+
+	<!--All Motivators -->
+	<definition name="motivator" extends="base-definition">
+		<put-attribute name="title" value="motivators" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/motivator.jsp" />
+	</definition>
+
+	<!-- new Motivators -->
+	<definition name="addMotivator" extends="base-definition">
+		<put-attribute name="title" value="New Motivator" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/addMotivator.jsp" />
+	</definition>
+
+	<!-- Market motivators -->
+	<definition name="marketMotivators"
+		extends="base-definition">
+		<put-attribute name="title" value="Market Motivators" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/marketMotivators.jsp" />
+	</definition>
+
+	<!-- User motivators -->
+	<definition name="userMotivators" extends="base-definition">
+		<put-attribute name="title" value="My Motivators" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/userMotivators.jsp" />
+	</definition>
+
+	<!-- Monitor page -->
+	<definition name="monitor" extends="base-definition">
+		<put-attribute name="title" value="Monitor" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/monitor.jsp" />
+	</definition>
+
+	<!-- Market offices page -->
+	<definition name="officeMarket" extends="base-definition">
+		<put-attribute name="title" value="OfficeMarket" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/officeMarket.jsp" />
+	</definition>
+
+	<!-- Market offices page -->
+	<definition name="authors" extends="base-definition">
+		<put-attribute name="title" value="Authors" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/authors.jsp" />
+	</definition>
+
+	<!-- Error page -->
+	<definition name="errorPage" extends="base-definition">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/error.jsp" />
+	</definition>
+
+	<!-- PageNotFound page -->
+	<definition name="pageNotFound" extends="base-definition">
+		<put-attribute name="title" value="PageNotFound" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/pageNotFound.jsp" />
+	</definition>
+
+	<!-- AccessDeniedJSP -->
+	<definition name="accessDenied" extends="base-definition">
+		<put-attribute name="title" value="AccessDenied" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/accessDenied.jsp" />
+	</definition>
+
+	<!-- listOfUsers page -->
+	<definition name="listOfUsers" extends="base-definition">
+		<put-attribute name="title" value="listOfUsers" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/userListOfUsers.jsp" />
+	</definition>
+	
+	<!-- jail page -->
+	<definition name="jailPage" extends="base-definition">
+		<!-- Deleting header from jsp -->
+		<put-attribute name="header" value="" />
+		<put-attribute name="title" value="jailPage" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/jailPage.jsp" />
+	</definition>
+
+	<!-- Event -->
+	<definition name="event" extends="base-definition">
+		<put-attribute name="title" value="event" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/event.jsp" />
+	</definition>
+	
+	<!-- bank -->
+	<definition name="bank" extends="base-definition">
+		<put-attribute name="title" value="bank" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/bank.jsp" />
+	</definition>
+	
+	<!-- bank -->
+	<definition name="myCredits" extends="base-definition">
+		<put-attribute name="title" value="myCredits" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/myCredits.jsp" />
+	</definition>
+	
+	<!-- bank -->
+	<definition name="allProgrammers" extends="base-definition">
+		<put-attribute name="title" value="All Programmers" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/pages/allProgrammers.jsp" />
+	</definition>
+	
+</tiles-definitions>
